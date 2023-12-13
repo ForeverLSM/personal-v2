@@ -2,6 +2,7 @@ body{
     background-image: url(../img/title_body.jpg);
     background-repeat: no-repeat;
     
+    background-color: red;
 }
 main{
 
