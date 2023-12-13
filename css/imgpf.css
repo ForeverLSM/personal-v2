@@ -1,0 +1,146 @@
+section#imgpf{
+  background-color: rgba(38, 8, 55, 0.53);
+  height: 100vh;
+  min-height: 960px;
+  display: flex;
+  align-items: center;
+}
+section#imgpf .wrap{
+
+}
+section#imgpf .wrap h2{
+
+  color: #fff;
+  font-family: 'Keania One', sans-serif;
+  font-size: 60px;
+  text-transform: capitalize;
+  text-align: center;
+}
+section#imgpf .wrap p{
+  
+  color: white;
+  text-align: center;
+  line-height: 4;
+}
+section#imgpf .wrap .iflist{
+    
+  font-size: 20px;
+  justify-content: center;
+  column-gap: 100px;
+  border-bottom: solid 1px white;
+  height: 50px;
+}
+
+section#imgpf .wrap .iflist li{
+    
+}
+section#imgpf .wrap .iflist li:hover{
+  border-bottom: solid 1px; white;
+}
+section#imgpf .wrap .iflist li a{
+  color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+  line-height: 49px;
+  display: block;
+}
+section#imgpf .wrap .iflist li a:hover{
+  border-bottom: solid 1px #fff;
+
+}
+section#imgpf .wrap .ex{
+
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+section#imgpf .wrap .ex li{
+
+}
+section#imgpf .wrap .ex li a{
+  color: white;
+  display: block;
+}
+
+section#imgpf .wrap .ex li a img{
+
+}
+
+section#imgpf .wrap .ex li:nth-child(1) img{
+  width: 470px;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+section#imgpf .wrap .ex li:nth-child(1) img:hover{
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+}
+
+section#imgpf .wrap .ex li:nth-child(2) img{
+
+  width: 470px;
+  height: 188px;
+  object-fit: cover;
+  object-position: top;
+}
+section#imgpf .wrap .ex li:nth-child(2) img:hover{
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+}
+section#imgpf .wrap .ex li:nth-child(3) img{
+
+  width: 470px;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+section#imgpf .wrap .ex li:nth-child(3) img:hover{
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+}
+section#imgpf .wrap .ex li:nth-child(4) img{
+
+  width: 470px;
+  height: 188px;
+  object-fit: cover;
+  object-position: top;
+}
+section#imgpf .wrap .ex li:nth-child(4) img:hover{
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+}
+section#imgpf .wrap .ex li:nth-child(5) img{
+
+  width: 470px;
+  height: 500px;
+  margin-top: -312px;
+  object-fit: cover;
+  object-position: top;
+}
+section#imgpf .wrap .ex li:nth-child(5) img:hover{
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+}
+section#imgpf .wrap .ex li:nth-child(6) img{
+
+  width: 470px;
+  height: 188px;
+  object-fit: cover;
+  object-position: top;
+}
+section#imgpf .wrap .ex li:nth-child(6) img:hover{
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+}
+section#imgpf .wrap .ex li:nth-child(7) img{
+
+}
+section#imgpf .wrap .ex li:nth-child(8) img{
+
+}
+
+

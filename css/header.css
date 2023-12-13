@@ -1,0 +1,45 @@
+header{
+   /* 넓이지정 */
+  margin: 0 auto; /* 중앙정렬 */
+  height: 90px;
+  width: 100%;
+  position: absolute;
+}
+header .wrap{
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  max-width: 100%;
+}
+header h1{
+    
+}
+header h1 a{
+  
+}
+header ul{
+  display: flex;
+  gap: 22px;
+}
+header ul li{
+    
+}
+header ul li a{
+    
+  color: #4f553b;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+div.wrap>a{
+   font-size: 0;
+   width: 40px;
+   height: 40px;
+   background-image: url(../img/menu_.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   right: 0;
+ }
