@@ -1,49 +1,48 @@
 section#contact{
-
   height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/contact/title_bg_02.jpg);
+  width: 100%;
+  position: relative;
 }
 section#contact .wrap{
 
   color: white;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 400px;
+  background-color: rgba(21,11,36,0.8);
+  justify-content: center;
+  position: absolute;
+  right: 281px;
 }
 section#contact .wrap h2{
 
+  color: #fff;
+  font-family: 'Keania One', sans-serif;
+  font-size: 60px;
+  text-transform: capitalize;
+  text-align: center;
 }
 section#contact .wrap ul{
 
   color: white;
+  width: 400px;
+  margin: 40px auto 0 auto;
 }
 section#contact .wrap ul li{
 
 }
-section#contact .wrap ul li a{
-  color: white;
-  display: flex;
-}
+section#contact .wrap ul li p{
 
-section#contact .wrap ul li a span{
+  line-height: 3;
+  font-size: 15px;
+}
+section#contact .wrap ul li p span{
 
-}
-section#contact .wrap ul li a span:nth-child(1)::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  border: solid 1px #2e2e2e;
-  display: block;
-  background-image: url(../img/contract/blog.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-section#contact .wrap ul li a span:nth-child(2)::before{
-  content: "";
-  width: 50px;
-  height: 50px;
-  border: solid 1px #2e2e2e;
-  display: block;
-  background-image: url(../img/contract/insta.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
+  padding-left: 50px;
+  font-size: 20px;
 }
 

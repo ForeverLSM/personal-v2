@@ -2,7 +2,6 @@ section#About{
   background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   min-height: 960px;
 }

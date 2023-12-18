@@ -1,13 +1,14 @@
 section#PortFolio{
   height: 100vh;
   background-color: rgba(255,255,255,0.8);
-  min-height: 960px;
-  display: flex;
-  align-items: center;
+  min-height: 800px;
 }
 section#PortFolio .wrap{
   text-align: center;
-  height: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section#PortFolio .wrap h3{
    
@@ -21,6 +22,7 @@ section#PortFolio .wrap ul{
 
   width: 1300px;
   margin: 100px auto 0 auto;
+  height: 45%;
 }
 
 section#PortFolio .wrap ul li{
@@ -28,12 +30,12 @@ section#PortFolio .wrap ul li{
   height: 300px;
   background-color: rebeccapurple;
   text-align: left;
-  border-radius: 20px;
+  /*! border-radius: 12px; */
+  background-size: cover;
+  background-repeat: no-repeat;
 }  
 section#PortFolio .wrap ul li:nth-child(1){
   background-image: url(../img/portfolio/accuniq.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 section#PortFolio .wrap ul li:nth-child(2){
   background-image: url(../img/portfolio/lpoint.JPG);

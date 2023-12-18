@@ -1,12 +1,13 @@
 section#imgpf{
   background-color: rgba(38, 8, 55, 0.53);
   height: 100vh;
-  min-height: 960px;
-  display: flex;
-  align-items: center;
+  min-height: 800px;
 }
 section#imgpf .wrap{
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section#imgpf .wrap h2{
 
@@ -53,7 +54,6 @@ section#imgpf .wrap .ex{
   justify-content: center;
   margin-top: 30px;
   gap: 14px;
-  align-items: flex-start;
 }
 
 section#imgpf .wrap .ex li{
