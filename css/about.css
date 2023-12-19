@@ -86,7 +86,6 @@ section#About .wrap .main1 .list li h4::before{
   padding-right: 5px;
   display: inline-block;
   height: 16px;
-  box-sizing: border-box;
 }
 section#About .wrap .main1 .list li>p{
   display: flex;

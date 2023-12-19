@@ -11,12 +11,13 @@ section#contact .wrap{
   color: white;
   display: flex;
   flex-direction: column;
-  width: 800px;
-  height: 400px;
+  width: 500px;
+  height: 600px;
   background-color: rgba(21,11,36,0.8);
   justify-content: center;
   position: absolute;
-  right: 281px;
+  right: 480px;
+  border-radius: 10px;
 }
 section#contact .wrap h2{
 
@@ -29,20 +30,53 @@ section#contact .wrap h2{
 section#contact .wrap ul{
 
   color: white;
-  width: 400px;
+  width: 200px;
   margin: 40px auto 0 auto;
+  height: 45%;
 }
-section#contact .wrap ul li{
-
+section#contact .wrap ul li:not(:first-child){
+  margin-top: 10px;
 }
-section#contact .wrap ul li p{
+section#contact .wrap ul li h4{
+  
+}
+section#contact .wrap ul li h4::before{
+  content: "";
+  border-left: 3px solid #ffef00;
+  padding-right: 5px;
+  display: inline-block;
+  height: 16px;
+}
+section#contact .wrap ul li p {
 
   line-height: 3;
-  font-size: 15px;
+  padding-left: 5px;
+  display: flex;
+  font-weight: 300;
 }
-section#contact .wrap ul li p span{
 
-  padding-left: 50px;
-  font-size: 20px;
+section#contact .wrap ul li a{
+  color: white;
+  line-height: 7;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
+
+section#contact .wrap ul li p a:nth-child(1){
+ 
+  background-image: url(../img/contact/blog.png);
+}
+section#contact .wrap ul li p a:nth-child(2){
+ 
+  background-image: url(../img/contact/insta.png);
+  transform: translateX(40px);
+}
+
+
+
 
