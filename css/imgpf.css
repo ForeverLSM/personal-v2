@@ -57,7 +57,7 @@ section#imgpf .wrap .ex{
 }
 
 section#imgpf .wrap .ex li{
-
+  overflow: hidden;
 }
 section#imgpf .wrap .ex li:nth-child(2){
   height: 100%;
@@ -75,13 +75,13 @@ section#imgpf .wrap .ex li a img{
 
 }
 
-section#imgpf .wrap .ex li:nth-child(1) img{
+section#imgpf .wrap .ex li:nth-child(1) a img{
   width: 470px;
   height: 500px;
   object-fit: cover;
   object-position: top;
 }
-section#imgpf .wrap .ex li:nth-child(1) img:hover{
+section#imgpf .wrap .ex li:nth-child(1) a:hover img{
   transform: scale(1.04);
   transition: all 0.5s ease-in-out;
 }
