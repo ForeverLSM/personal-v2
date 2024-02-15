@@ -33,9 +33,9 @@
 ## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
 ![아큐닌](https://github.com/ForeverLSM/personal-v2/assets/150096222/83893c1b-f993-4e25-bc57-92fd5176a3f2)
 
-```bash
+
 <h3 align="left">Languages and Tools:</h3>
-<p align="left" style="display: flex; white-space: pre-line; gap: 20px;">
+<p align="left" style="display: flex; white-space: pre-line; gap: 20px; background-color:#ccc;">
   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
   </a>
@@ -63,7 +63,7 @@
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/>
   </a>
 </p>
-```
+
 ## 작성자 정보
 (이메일 주소나 연락처 정보를 추가)
 
