@@ -2,7 +2,7 @@
 
 # 프로젝트 명 : 이성민 포트폴리오 홈페이지
 ```bash
-### 개인 홈페이지 주소 https://foreverlsm.github.io/personal-v2
+개인 홈페이지 주소 https://foreverlsm.github.io/personal-v2
 ```
 ## 프로젝트 목표
 취업을 위한 포트폴리오 제작, 자신의 작업을 전시하고 홍보
