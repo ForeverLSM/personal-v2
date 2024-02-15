@@ -1,5 +1,5 @@
 (README 파일을 작성할 때, 명확하고 정보를 잘 전달할 수 있도록 노력하세요. 이 파일은 취업 또는 협업 기회를 위한 중요한 자료가 될 수 있습니다.)
-### 개인 홈페이지 주소 https://github.com/ForeverLSM/personal-v2/
+### 개인 홈페이지 주소 https://foreverlsm.github.io/personal-v2
 # 프로젝트 명 : 이성민 포트폴리오 홈페이지
 ```bash
 <h1>제목</h1>
