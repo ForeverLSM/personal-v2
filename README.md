@@ -28,10 +28,8 @@
 - 하이트 진로 클론코딩 https://foreverlsm.github.io/pf4-Hite/
 
 ## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
-![pf1](https://github.com/pageservice/personal/assets/71798491/040b7316-5c4c-4a09-b7e8-6c54d60ec832)
-![pf2](https://github.com/pageservice/personal/assets/71798491/1a7c723b-1e1b-4cb6-9f45-6b17b89482e9)
+![아큐닌](https://github.com/ForeverLSM/personal-v2/assets/150096222/83893c1b-f993-4e25-bc57-92fd5176a3f2)
 
-![ww](https://github.com/pageservice/personal/assets/71798491/30c357e8-d39b-42e6-9c30-0db7706f73d4)
 
 
 
