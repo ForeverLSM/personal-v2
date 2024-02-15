@@ -32,6 +32,9 @@
 
 ## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
 ![아큐닌](https://github.com/ForeverLSM/personal-v2/assets/150096222/83893c1b-f993-4e25-bc57-92fd5176a3f2)
+![HP PAPER 리뉴얼](https://github.com/ForeverLSM/personal-v2/assets/150096222/e1311fde-89cd-492a-a205-e37f4c41bfdc)
+![WINIX](https://github.com/ForeverLSM/personal-v2/assets/150096222/ec2e9f57-2f85-48b3-8cc1-edfd1095adf7)
+![하이트진로](https://github.com/ForeverLSM/personal-v2/assets/150096222/b1b107a3-2063-4789-b80d-ee684029edd3)
 
 
 <h3 align="left">Languages and Tools:</h3>
