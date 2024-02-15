@@ -175,3 +175,6 @@ section#About .wrap .main1 .skill ul li:nth-child(3)::before{
 section#About .wrap .main1 .skill ul li:nth-child(4)::before{
   background-image: url(../img/about/css3_logo.png);
 }
+section#About .wrap .main1 .skill ul li:nth-child(5)::before{
+  background-image: url(../img/about/js_logo.png);
+}
