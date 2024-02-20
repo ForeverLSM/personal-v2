@@ -9,6 +9,7 @@ section#PortFolio .wrap{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 section#PortFolio .wrap h3{
    
@@ -21,8 +22,14 @@ section#PortFolio .wrap h3{
 section#PortFolio .wrap ul{
 
   width: 1300px;
-  margin: 100px auto 0 auto;
+  margin-top: 100px;
   height: 45%;
+}
+section#PortFolio .wrap ul.pfSlide .slick-track{
+  
+}
+section#PortFolio .wrap ul.pfSlide .slick-track li{
+  
 }
 
 section#PortFolio .wrap ul li{
@@ -33,19 +40,28 @@ section#PortFolio .wrap ul li{
   /*! border-radius: 12px; */
   background-size: cover;
   background-repeat: no-repeat;
+  display: ;
 }  
 section#PortFolio .wrap ul li:nth-child(1){
   background-image: url(../img/portfolio/accuniq.JPG);
 }
 section#PortFolio .wrap ul li:nth-child(2){
   background-image: url(../img/portfolio/lpoint.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 section#PortFolio .wrap ul li:nth-child(3){
   background-image: url(../img/portfolio/winix.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+section#PortFolio .wrap ul li:nth-child(4){
+  
+  display: none;
+}
+section#PortFolio .wrap ul li:nth-child(5){
+  
+  display: none;
+}
+section#PortFolio .wrap ul li:nth-child(6){
+  
+  display: none;
 }
 section#PortFolio .wrap ul li a{
   display: block;
@@ -61,8 +77,10 @@ section#PortFolio .wrap ul li a>span{
   text-align: center;
   line-height: 17;
   font-size: 0px;
+  transition: 0.5s;
 }
-section#PortFolio .wrap ul li span:hover{
+
+section#PortFolio .wrap ul li a > span:hover{
   
   font-size: 18px;
 }
@@ -73,10 +91,15 @@ section#PortFolio .wrap ul li a:hover{
 section#PortFolio .wrap ul li p{
   padding-left: 15%;
   box-sizing: border-box;
-  line-height: 2;
+  line-height: 1.5;
   padding-top: 10px;
 }
 section#PortFolio .wrap ul li p strong{
   
-  color: #4c44a1;
+  /*! color: #4c44a1; */
+}
+section#PortFolio .wrap ul li p span{
+  
+  margin-bottom: 10px;
+  color: #535353;
 }
