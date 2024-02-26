@@ -48,7 +48,7 @@ section#PortFolio .wrap ul.pfSlide .slick-track li{
 
 section#PortFolio .wrap ul li{
   text-align: left;
-height: 300px;
+/*! height: 300px; */
   
 border-radius: 12px;
   background-size: cover;
