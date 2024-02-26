@@ -35,13 +35,31 @@ section#PortFolio .wrap ul.pfSlide .slick-track{
 }
 section#PortFolio .wrap ul.pfSlide .slick-track li{
   
+
+  height: 45%;
+
+}
+section#PortFolio .wrap ul.pfSlide .slick-track{
+  
+}
+section#PortFolio .wrap ul.pfSlide .slick-track li{
+  
 }
 
 section#PortFolio .wrap ul li{
   text-align: left;
-  /*! height: 300px; */
+height: 300px;
   
+border-radius: 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }  
+section#PortFolio .wrap ul li p{
+  
+  color: white;
+  padding: 25px 45px;
+}
 .slick-dots li button{
   
 }
@@ -118,7 +136,6 @@ section#PortFolio .wrap ul li a>span{
   transition: 0.5s;
 }
 
-
 section#PortFolio .wrap ul li p{
   box-sizing: border-box;
   line-height: 1.5;
@@ -127,7 +144,7 @@ section#PortFolio .wrap ul li p{
 }
 section#PortFolio .wrap ul li p strong{
   
-  /*! color: #4c44a1; */
+  color: #7f7f7f;
 }
 section#PortFolio .wrap ul li p span{
   
