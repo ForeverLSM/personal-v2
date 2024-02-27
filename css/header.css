@@ -24,12 +24,12 @@ header .wrap{
 }
 @keyframes logoani{
   0%{
-    transform: rotate(0deg);
+    
     width: 0px;
     
   }
   100%{
-    transform: rotate(360deg);
+    
     opacity: 1;    
   }
 }
@@ -124,6 +124,23 @@ header .nav ul li:nth-child(3) a{
 header .nav ul li:nth-child(4) a{
   
 }
+header .nav ul li:nth-child(1) a:hover{
+  color: #4c44a1;
+  font-weight: 500;
+}
+header .nav ul li:nth-child(2) a:hover{
+  color: #4c44a1;
+  font-weight: 500;
+}
+header .nav ul li:nth-child(3) a:hover{
+  color: #4c44a1;
+  font-weight: 500;
+}
+header .nav ul li:nth-child(4) a:hover{
+  color: #4c44a1;
+  font-weight: 500;
+}
+
 
 header .nav ul li a::after{
   content: "";

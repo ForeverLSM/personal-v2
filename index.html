@@ -47,9 +47,36 @@
                $("header .nav").removeClass("show");
                return false;
             });
-            
             return false;
          });
+        
+         //대메뉴 홈 클릭시 실행하시오
+         $("header .wrap h1 a").click(function(){
+            $("html,body").animate({scrollTop:"0px"},1500); 
+            return false;
+         });
+         
+         //about에 클릭시 스크롤 이동하게 만드시오
+         $("header .nav ul li:nth-child(1) a").click(function(){
+            $("html,body").animate({scrollTop:$(window).height()},1500); 
+            return false;
+         });
+         //igmfolio에 클릭시 스크롤 이동하게 만드시오
+         $("header .nav ul li:nth-child(2) a").click(function(){
+            $("html,body").animate({scrollTop:$(window).height()*2+200},1500); 
+            return false;
+         });
+         //webfolio에 클릭시 스크롤 이동하게 만드시오
+         $("header .nav ul li:nth-child(3) a").click(function(){
+            $("html,body").animate({scrollTop:$(window).height()*3+300},1500); 
+            return false;
+         });
+         //contact에 클릭시 스크롤 이동하게 만드시오
+         $("header .nav ul li:nth-child(4) a").click(function(){
+            $("html,body").animate({scrollTop:$(window).height()*4+300},1500); 
+            return false;
+         });
+         return false;
       });
    </script>
 
@@ -86,16 +113,16 @@
       <div class="nav">
          <ul>
             <li>
-               <a href="#About">About</a>
+               <a href="">About</a>
             </li>
             <li>
-               <a href="#imgpf">Imgfolio</a>
+               <a href="">Imgfolio</a>
             </li>
             <li>
-               <a href="#PortFolio">Webfolio</a>
+               <a href="">Webfolio</a>
             </li>
             <li>
-               <a href="#contact">Contact</a>
+               <a href="">Contact</a>
             </li>
          </ul>
          <span>닫기</span>
