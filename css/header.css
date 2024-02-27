@@ -4,6 +4,7 @@ header{
   height: 90px;
   width: 100%;
   position: fixed;
+  z-index: 2;
 }
 header .wrap{
   display: flex;
@@ -19,14 +20,16 @@ header .wrap{
   animation-delay: 1s;
   opacity: 0;
   
+  
 }
 @keyframes logoani{
   0%{
+    transform: rotate(0deg);
     width: 0px;
     
   }
   100%{
-    
+    transform: rotate(360deg);
     opacity: 1;    
   }
 }
