@@ -52,31 +52,56 @@
         
          //대메뉴 홈 클릭시 실행하시오
          $("header .wrap h1 a").click(function(){
-            $("html,body").animate({scrollTop:"0px"},1500); 
+            $("html,body").stop().animate({scrollTop:"0px"},1500); 
             return false;
          });
          
          //about에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(1) a").click(function(){
-            $("html,body").animate({scrollTop:$(window).height()},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()+90},1500); 
             return false;
          });
          //igmfolio에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(2) a").click(function(){
-            $("html,body").animate({scrollTop:$(window).height()*2+200},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*2+150},1500); 
             return false;
          });
          //webfolio에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(3) a").click(function(){
-            $("html,body").animate({scrollTop:$(window).height()*3+300},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*3+390},1500); 
             return false;
          });
          //contact에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(4) a").click(function(){
-            $("html,body").animate({scrollTop:$(window).height()*4+300},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*4+430},1500); 
             return false;
          });
-         return false;
+
+         $("div#title .wrap ul li:nth-child(1)>a").click(function(){
+            $("html,body").stop().animate({scrollTop:$(window).height()+90},1500); 
+            return false;
+         });
+
+         $("div#title .wrap ul li:nth-child(2) a").click(function(){
+            $("html,body").stop().animate({scrollTop:$(window).height()*4+430},1500); 
+            return false;
+         });
+         
+
+         // var headerH=$("header").height();//페이지가 열리면 헤더의 높이값을 불러오시오
+         $(window).scroll(function(){
+                //헤드애니
+                if($(window).scrollTop()>$("header").height()){//윈도우의 scrollTop위치값이 ~보다 커지면                    
+                    //body에 스타일을 지정하시오(padding-top값을 headerH값으로 지정)
+                  //   $("body").css("padding-top",headerH);
+                    //header에게 class를 붙이시오
+                    $("header").addClass("headsub");
+                }else{//그렇지 않는다면..
+                  //   $("body").css("padding-top","0px");
+                    $("header").removeClass("headsub")
+                }
+         });
+         
       });
    </script>
 
@@ -137,8 +162,8 @@
          <span class="block h1"> HomePage</span>
       </h2>
          <ul class="flex">
-            <li><a href="#About">start</a></li>
-            <li><a href="#contact">end</a></li>
+            <li><a href="">start</a></li>
+            <li><a href="">end</a></li>
          </ul>
       </div>
    </div>
