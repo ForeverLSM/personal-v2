@@ -3,7 +3,7 @@ header{
    /* 중앙정렬 */
   height: 90px;
   width: 100%;
-  position: absolute;
+  position: fixed;
 }
 header .wrap{
   display: flex;
@@ -11,12 +11,41 @@ header .wrap{
   align-items: center;
   height: 100%;
   max-width: 100%;
+  animation-name: logoani;
+  transition: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  
+}
+@keyframes logoani{
+  0%{
+    width: 0px;
+    opacity: 0;
+  }
+  100%{
+    
+    opacity: 1;    
+  }
 }
 header .wrap h1{
-  font-size: 0;
+
 }
-header .wrap>a{
+header .wrap h1 a{
+  font-size: 0;
+  width: 100px;
+  height: 40px;
+  background-image: url(../img/header/logo.png);
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .wrap h1 a:hover{
   
+  background-image: url(../img/header/logo-hover.png);
+}
+header .wrap>a{  
   font-size: 0;
   background-image: url(../img/header/menu_.svg);
   width: 40px;
@@ -38,6 +67,7 @@ header .nav{
   align-items: center;
   transition: 1s;
   opacity: 0;
+  border-radius: 20px;
 }
 header .nav ul{
 
@@ -122,6 +152,6 @@ header .nav span{
 }
 .show{
   
-  right: calc((100vw - 1450px) / 2) !important;
+  right: calc((100vw - 1470px) / 2) !important;
   opacity: 1 !important;
 }
