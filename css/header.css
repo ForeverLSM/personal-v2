@@ -17,12 +17,13 @@ header .wrap{
   animation-fill-mode: forwards;
   animation-duration: 1s;
   animation-delay: 1s;
+  opacity: 0;
   
 }
 @keyframes logoani{
   0%{
     width: 0px;
-    opacity: 0;
+    
   }
   100%{
     
