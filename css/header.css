@@ -14,11 +14,11 @@ header{
   position: fixed;
   top: 0;
   z-index: 1;
-  animation-name: down;
-  animation-duration: 0.2s;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  /*! animation-name: down; */
+  /*! animation-duration: 0.2s; */
+  /*! animation-direction: reverse; */
+  /*! animation-fill-mode: forwards; */
+  /*! animation-timing-function: ease-out; */
 }
 @keyframes down{
     0%{
