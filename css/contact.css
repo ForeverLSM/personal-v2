@@ -16,7 +16,7 @@ section#contact .wrap{
   background-color: rgba(21,11,36,0.8);
   justify-content: center;
   position: absolute;
-  right: 480px;
+  right: calc(0vw + 480px);
   border-radius: 10px;
 }
 section#contact .wrap h2{

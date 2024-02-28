@@ -83,7 +83,7 @@ header .wrap>a{
   z-index: 1;
 }
 header .nav{
-  width: 300px;
+  width: 170px;
   height: 400px;
   position: absolute;
   right: calc((100vw - 2550px) / 2);
