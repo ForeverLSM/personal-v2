@@ -71,35 +71,35 @@
          
          //about에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(1) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()},1000); 
             return false;
          });
          //igmfolio에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(2) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()*2+60},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*2+60},1000); 
             return false;
          });
          //webfolio에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(3) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()*3+300},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*3+300},1000); 
             return false;
          });
          //contact에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(4) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()*4+390},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*4+390},1000); 
             return false;
          });
 
          $("div#title .wrap ul li:nth-child(1)>a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()},1000); 
             return false;
          });
 
          $("div#title .wrap ul li:nth-child(2) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()*4+390},1500); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*4+390},1000); 
             return false;
          });
-         
+         return false;
       });
    </script>
    <!-- slick 링크-->
