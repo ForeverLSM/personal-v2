@@ -138,11 +138,10 @@ section#About .wrap .main1 .skill h4::before{
   box-sizing: border-box;
 }
 section#About .wrap .main1 .skill ul{
-  
   height: 100px;
   align-items: center;
   justify-content: left;
-  gap: 50px;
+  gap: 30px;
 }
 section#About .wrap .main1 .skill ul li{
 
@@ -177,4 +176,7 @@ section#About .wrap .main1 .skill ul li:nth-child(4)::before{
 }
 section#About .wrap .main1 .skill ul li:nth-child(5)::before{
   background-image: url(../img/about/js_logo.png);
+}
+section#About .wrap .main1 .skill ul li:nth-child(6)::before{
+  background-image: url(../img/about/vue_logo.png);
 }

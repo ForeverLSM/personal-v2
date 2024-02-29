@@ -37,14 +37,15 @@
    <link rel="stylesheet" href="css/imgpf.css">
    <link rel="stylesheet" href="css/portfolio.css">
    <link rel="stylesheet" href="css/contact.css">
+   <link rel="stylesheet" href="css/aside.css">
    <link rel="stylesheet" href="css/footer.css">
    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script> -->
    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
    
    <script type="text/javascript">
-      $(document).ready(function(){
+      $(document).ready(function(){      
          $("header .wrap > a").click(function(){
-            $("header .nav").addClass("show");
+            $("header .nav").toggleClass("show");
             $("header .nav span").click(function(){
                $("header .nav").removeClass("show");
                return false;
@@ -59,16 +60,21 @@
                $("header").addClass("headsub");
                 }else{//그렇지 않는다면..
            //   $("body").css("padding-top","0px");
-               $("header").removeClass("headsub")
+               $("header").removeClass("headsub")               
             }
          });
 
          //대메뉴 홈 클릭시 실행하시오
          $("header .wrap h1 a").click(function(){
-            $("html,body").animate({scrollTop:"0px"},1500); 
+            $("html,body").stop().animate({scrollTop:"0px"},1500); 
             return false;
          });
-         
+         // aside 를 클릭시 스크롤 이동하게 만드시오
+         $(".topbt a").click(function(){
+            $("html,body").stop().animate({scrollTop:"0px"},1500); 
+            return false;
+         });
+
          //about에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(1) a").click(function(){
             $("html,body").stop().animate({scrollTop:$(window).height()},1000); 
@@ -215,6 +221,7 @@
                      <li>HTML5</li>
                      <li>CSS3</li>
                      <li>JS</li>
+                     <li>Vue.js</li>
                   </ul>
                </div>
             </div>
@@ -229,7 +236,7 @@
                <li><a href="">mail</a></li>
                <li><a href="">news</a></li>
             </ul>
-            <ul class="ex flex between">
+            <ul data-aos="flip-down" data-aos-duration="1000" class="ex flex between">
                <li>
                   <a href="img/imgfolio/portfolio_mail.jpg" target="_blank"><img src="img/imgfolio/portfolio_mail.jpg" alt=""></a>               
                </li>
@@ -328,35 +335,38 @@
       </section>
       <section id="contact" class="paddingT50 paddingB50">
       <!-- div>h2+ul>li*3>a -->
-      <div data-aos="fade-up-right" data-aos-duration="2000" class="wrap">
-         <h2 class="h2">contact</h2>
-         <ul>
-            <li>
-               <h4 class="h6">Mail Address.</h4>
-               <p>lsmbang2002@naver.com</p>
-            </li>
-            <li>
-               <h4 class="h6">Phone.</h4>
-               <p>010.44**.85**</p>
-            </li>
-            <li>
-               <h4 class="h6">SNS.</h4>
-               <p><a href="https://blog.naver.com/blog-toy" target="_blank">Blog</a><a href="https://www.instagram.com/toy.stagram/" target="_blank">instagram</a>
-               </p>
-            </li>
-         </ul>
-         <!-- <ul> 
-            <li><p>Mail.<span>lsmbang2002@naver.com</span></p>
-            </li>
-            <li><p>Phone.<span>010.4433.8504</span></p></li>
-            <li>
-               <p>SNS.</p>
-               <a href="">blog</a>
-               <a href="">instagram</a>          
-            </li>
-         </ul>-->
-      </div>
+         <div data-aos="fade-up-right" data-aos-duration="2000" class="wrap">
+            <h2 class="h2">contact</h2>
+            <ul>
+               <li>
+                  <h4 class="h6">Mail Address.</h4>
+                  <p>lsmbang2002@naver.com</p>
+               </li>
+               <li>
+                  <h4 class="h6">Phone.</h4>
+                  <p>010.44**.85**</p>
+               </li>
+               <li>
+                  <h4 class="h6">SNS.</h4>
+                  <p><a href="https://blog.naver.com/blog-toy" target="_blank">Blog</a><a href="https://www.instagram.com/toy.stagram/" target="_blank">instagram</a>
+                  </p>
+               </li>
+            </ul>
+            <!-- <ul> 
+               <li><p>Mail.<span>lsmbang2002@naver.com</span></p>
+               </li>
+               <li><p>Phone.<span>010.4433.8504</span></p></li>
+               <li>
+                  <p>SNS.</p>
+                  <a href="">blog</a>
+                  <a href="">instagram</a>          
+               </li>
+            </ul>-->
+         </div>
       </section>
+      <aside class="topbt">
+         <a href="">Top</a>
+      </aside>
    </main>
    <!-- 하단영역 -->
    <footer>
