@@ -52,7 +52,7 @@
             });
             return false;
          });
-         
+         // 대메뉴 클릭시 해당 스크롤로 이동하기
          $(window).scroll(function(){
             //헤드애니
             if($(window).scrollTop()>$("header").height()){//윈도우의 scrollTop위치값이 ~보다 커지면
@@ -137,11 +137,60 @@
           AOS.init();
       });
     </script>
+
+   <!-- 마우스휠하면 해당 페이지로 이동하기 -->
+   <script type="text/javascript">
+      window.onload = function () {
+         var elm = ".box";
+         $(elm).each(function (index) {
+            // 개별적으로 Wheel 이벤트 적용
+            $(this).on("mousewheel DOMMouseScroll", function (e) {
+                  e.preventDefault();
+                  var delta = 0;
+                  if (!event) event = window.event;
+                  if (event.wheelDelta) {
+                     delta = event.wheelDelta / 120;
+                     if (window.opera) delta = -delta;
+                  } 
+                  else if (event.detail)
+                     delta = -event.detail / 3;
+                  var moveTop = $(window).scrollTop();
+                  var elmSelecter = $(elm).eq(index);
+                  // 마우스휠을 위에서 아래로
+                  if (delta < 0) {
+                     if ($(elmSelecter).next() != undefined) {
+                        try{
+                              moveTop = $(elmSelecter).next().offset().top;
+                        }catch(e){}
+                     }
+                  // 마우스휠을 아래에서 위로
+                  } else {
+                     if ($(elmSelecter).prev() != undefined) {
+                        try{
+                              moveTop = $(elmSelecter).prev().offset().top;
+                        }catch(e){}
+                     }
+                  }
+                  
+                  // 화면 이동 0.8초(800)
+                  $("html,body").stop().animate({
+                     scrollTop: moveTop + 'px'
+                  }, {
+                     duration: 800, complete: function () {
+                     }
+                  });
+            });
+         });
+         
+         $("main>section").unwrap();
+         $("section").css("height","100%");
+      }
+</script>
 </head>
 <body>
    <!-- 상단영역 -->
    <!-- header>.wrap>h1.hide+a -->
-   <header>
+   <header class="box">
       <div class="wrap">
          <h1><a href="">logo</a></h1>
          <a href="">menu</a>
@@ -166,7 +215,7 @@
    </header>
    <!-- 타이틀영역 -->
    <!-- div#title>div.wrap>h2+p -->
-   <div id="title">
+   <div id="title" class="box">
       <div class="wrap">
          <h2 class="h2">Thank you for Visiting
          <span class="block h1">Lee.SM</span>
@@ -181,7 +230,7 @@
    <!-- 메인영역 -->
    <!-- main>section#*4 -->
    <main>
-      <section id="About" class="paddingT50 paddingB50">
+      <section id="About" class="paddingT50 paddingB50 box">
          <div data-aos="zoom-in" data-aos-duration="1000" class="wrap flex between">
             <div class="me">
                <h2 class="h2">ID Crad</h2>
@@ -227,7 +276,7 @@
             </div>
          </div>        
       </section>
-      <section id="imgpf" class="paddingT50 paddingB50">         
+      <section id="imgpf" class="paddingT50 paddingB50 box">         
          <div class="wrap">
             <h2 class="h2">imgfolio</h2>
             <p>상품별 기획전 및 메일링 이미지 입니다.</p>
@@ -260,7 +309,7 @@
             </ul>
          </div>
       </section>
-      <section id="PortFolio" class="paddingT50 paddingB50">
+      <section id="PortFolio" class="paddingT50 paddingB50 box">
          <div class="wrap ">
             <h3 class="h2">web Portfolio</h3>
             <ul class="flex between pfSlide">
@@ -333,7 +382,7 @@
             </ul>
          </div>
       </section>
-      <section id="contact" class="paddingT50 paddingB50">
+      <section id="contact" class="paddingT50 paddingB50 box">
       <!-- div>h2+ul>li*3>a -->
          <div data-aos="fade-up-right" data-aos-duration="2000" class="wrap">
             <h2 class="h2">contact</h2>

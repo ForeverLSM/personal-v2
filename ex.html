@@ -11,64 +11,75 @@
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script type="text/javascript">
          $(document).ready(function(){
-            $('.slider').slick({
-            dots: false,
-            arrows: false,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear'
-            });
-   
-            $('.slider-nav-item').click(function(){
-            var index = $(this).index();
-            $('.slider').slick('slickGoTo', index);
-            });
-         
-            $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-            $('.slider-nav-item').removeClass('active');
-            $('.slider-nav-item').eq(nextSlide).addClass('active');
-            });
+
          });
    </script>
 
    <style>
-      .slider {
-         width: 80%;
-         margin: 0 auto;
-      }
-      .slider-nav {
-         display: flex;
-         justify-content: center;
-         margin-top: 20px;
-      }
- 
-      .slider-nav-item {
-         width: 30px;
-         height: 5px;
-         background-color: gray;
-         margin: 0 5px;
-         cursor: pointer;
-      }
- 
-      .slider-nav-item.active {
-         background-color: black;
-      }
+
+    @keyframes move-up {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-1px); } /* 위로 이동하는 애니메이션 */
+        100% { transform: translateY(0); }
+    }
+
+    @keyframes move-down {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-3px); } /* 아래로 이동하는 애니메이션 */
+        100% { transform: translateY(0); }
+    }
+    @keyframes move-hight {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px); } /* 아래로 이동하는 애니메이션 */
+        100% { transform: translateY(0); }
+    }
+    @keyframes move-down2 {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-3px); } /* 아래로 이동하는 애니메이션 */
+        100% { transform: translateY(0); }
+    }
+    @keyframes move-up3 {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-1px); } /* 위로 이동하는 애니메이션 */
+        100% { transform: translateY(0); }
+    }
+    .moving-element span {
+        display: inline-block;
+    }
+
+    .move-up {
+        animation: move-up 1s infinite;
+        
+    }
+    .move-down {
+        animation: move-down 1.5s infinite;
+        
+    }
+    .move-hight {
+        animation: move-hight 2s infinite;
+        
+    }
+    .move-down2 {
+        animation: move-down 2.5s infinite;
+        
+    }
+    .move-up3 {
+        animation: move-up 3s infinite;
+        
+        
+    }
    </style>
 </head>
 <body>
-   <div class="slider">
-      <div><img src="image1.jpg" alt="Image 1"></div>
-      <div><img src="image2.jpg" alt="Image 2"></div>
-      <div><img src="image3.jpg" alt="Image 3"></div>
+   <div class="move moving-element">
+      <p>
+         <span class="move-up">가</span>
+         <span class="move-down">나</span>
+         <span class="move-hight">마</span>
+         <span class="move-down2">다</span>
+         <span class="move-up3">라</span>
+      </p>
     </div>
-    
-    <div class="slider-nav">
-      <div class="slider-nav-item"></div>
-      <div class="slider-nav-item"></div>
-      <div class="slider-nav-item"></div>
-    </div>
-    
 </body>
 </html>
 
