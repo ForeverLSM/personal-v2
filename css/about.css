@@ -79,6 +79,7 @@ section#About .wrap .main1 .list li h4{
 
   padding-bottom: 15px;
   box-sizing: border-box;
+  font-weight: 500;
 }
 section#About .wrap .main1 .list li h4::before{
   content: "";
@@ -128,6 +129,7 @@ section#About .wrap .main1 .skill{
 section#About .wrap .main1 .skill h4{
   
   margin-bottom: 10px;
+  font-weight: 500;
 }
 section#About .wrap .main1 .skill h4::before{
   content: "";
