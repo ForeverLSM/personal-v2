@@ -1,7 +1,9 @@
 body{
-  
   overflow-x: hidden;
   position: relative;
+  background-image: url(../img/title_body.jpg);
+  background-repeat: no-repeat;
+  width: 100vw;
 }
 header{
    /* 넓이지정 */
