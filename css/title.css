@@ -20,7 +20,7 @@ div#title{
   animation-name: font01;
   animation-duration: 1.5s;
   
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Keania One', sans-serif;
   width: fit-content;
   line-height: 2;
  }
@@ -90,8 +90,9 @@ div#title .wrap h2>span:nth-child(2){
   font-weight: 300;
   text-transform: capitalize;
   display: block;
-  line-height: 1.5;
+  line-height: 1.7;
   height: 100%;
+  font-family: 'Keania One', sans-serif;
  }
 div#title .wrap ul li:nth-child(1)>a{
   

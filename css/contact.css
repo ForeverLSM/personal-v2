@@ -35,7 +35,7 @@ section#contact .wrap ul{
   height: 45%;
 }
 section#contact .wrap ul li:not(:first-child){
-  margin-top: 10px;
+  margin-top: 20px;
 }
 section#contact .wrap ul li h4{
   
@@ -49,10 +49,12 @@ section#contact .wrap ul li h4::before{
 }
 section#contact .wrap ul li p {
 
-  line-height: 3;
-  padding-left: 5px;
+  line-height: 2.5;
+  padding-left: 7px;
   display: flex;
   font-weight: 300;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 section#contact .wrap ul li a{
@@ -68,13 +70,13 @@ section#contact .wrap ul li a{
 }
 
 section#contact .wrap ul li p a:nth-child(1){
- 
   background-image: url(../img/contact/blog.png);
 }
 section#contact .wrap ul li p a:nth-child(2){
- 
   background-image: url(../img/contact/insta.png);
-  transform: translateX(40px);
+}
+section#contact .wrap ul li p a:nth-child(3){
+  background-image: url(../img/contact/git.png);
 }
 
 
