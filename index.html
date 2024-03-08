@@ -53,7 +53,7 @@
             return false;
          });
          // 대메뉴 클릭시 해당 스크롤로 이동하기
-         $(window).scroll(function(){
+         /*$(window).scroll(function(){
             //헤드애니
             if($(window).scrollTop()>$("header").height()){//윈도우의 scrollTop위치값이 ~보다 커지면
                //header에게 class를 붙이시오
@@ -62,7 +62,7 @@
            //   $("body").css("padding-top","0px");
                $("header").removeClass("headsub")               
             }
-         });
+         });*/
 
          //대메뉴 홈 클릭시 실행하시오
          $("header .wrap h1 a").click(function(){
@@ -82,17 +82,17 @@
          });
          //igmfolio에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(2) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()*2+60},1000); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*2+150},1000); 
             return false;
          });
          //webfolio에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(3) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()*3+300},1000); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*3+350},1000); 
             return false;
          });
          //contact에 클릭시 스크롤 이동하게 만드시오
          $("header .nav ul li:nth-child(4) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()*4+390},1000); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*4+450},1000); 
             return false;
          });
          //start버튼 클릭시 이동하시오
@@ -102,7 +102,7 @@
          });
          //end버튼 클릭시 이동하시오
          $("div#title .wrap ul li:nth-child(2) a").click(function(){
-            $("html,body").stop().animate({scrollTop:$(window).height()*4+390},1000); 
+            $("html,body").stop().animate({scrollTop:$(window).height()*4+450},1000); 
             return false;
          });
          return false;
