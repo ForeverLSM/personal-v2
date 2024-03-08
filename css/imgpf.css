@@ -33,19 +33,34 @@ section#imgpf .wrap .iflist{
 
 section#imgpf .wrap .iflist li{
     
+  width: 90px;
+  position: relative;
 }
-section#imgpf .wrap .iflist li:hover{
-  border-bottom: solid 1px #eee;
-}
+
 section#imgpf .wrap .iflist li a{
   color: white;
   padding: 0 20px;
   box-sizing: border-box;
   line-height: 49px;
   display: block;
+  position: relative;
+}
+section#imgpf .wrap .iflist li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #4c44a1;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  z-index: 2;
+  transition: all ease .3s;
+}
+section#imgpf .wrap .iflist li a:hover::after{
+  width: 100%;
 }
 section#imgpf .wrap .iflist li a:hover{
-  border-bottom: solid 1px #fff;
+ /*! border-bottom: solid 1px #fff; */ 
 
 }
 section#imgpf .wrap .ex{
