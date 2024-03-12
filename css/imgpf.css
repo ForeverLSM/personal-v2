@@ -16,11 +16,13 @@ section#imgpf .wrap h2{
   font-size: 60px;
   text-transform: capitalize;
   text-align: center;
+  z-index: 1;
 }
 section#imgpf .wrap p{
   color: white;
   text-align: center;
   line-height: 4;
+  z-index: 1;
 }
 section#imgpf .wrap .iflist{
     

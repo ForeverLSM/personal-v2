@@ -24,36 +24,58 @@ section#PortFolio .wrap h3{
   text-transform: capitalize;
 }
 
-section#PortFolio .wrap ul{
-
+section#PortFolio .wrap .pfSlide{
   width: 1300px;
+  overflow-x: clip;
+  margin-bottom: 0;
+  margin-top: 50px;
+  height: 90%;
+}
+section#PortFolio .wrap ul .slick-dots{
+  width: 100%;
+  height: initial;
+  bottom: 100px;
+}
+section#PortFolio .wrap ul li .slick-dots li button{
+  
+}
+section#PortFolio .wrap ul .slick-list{
+  height: 100%;
+  overflow: initial;
   margin-top: 100px;
-  /*! height: 45%; */
 }
 section#PortFolio .wrap ul.pfSlide .slick-track{
   
+  /*! /*! height: 100%; */ */
 }
-section#PortFolio .wrap ul.pfSlide .slick-track li{
-  
-
+section#PortFolio .wrap ul.pfSlide .slick-track .slick-center li{
   height: 45%;
 
 }
-section#PortFolio .wrap ul.pfSlide .slick-track{
-  
+
+section#PortFolio .wrap ul.pfSlide .slick-track .slick-center li img{
+  transition: 0.5s;  
 }
-section#PortFolio .wrap ul.pfSlide .slick-track li{
-  
+section#PortFolio .wrap ul.pfSlide .slick-track .slick-center{
+  transform: translateY(-50px);
 }
+section#PortFolio .wrap ul.pfSlide .slick-track .slick-center p{
+  margin-top: 30px;  
+}
+section#PortFolio .wrap ul.pfSlide .slick-track .slick-center a img{
+   display: block; 
+   transform: scale(1.1);   
+}
+
 
 section#PortFolio .wrap ul li{
   text-align: left;
-/*! height: 300px; */
-  
-border-radius: 12px;
+/*! height: 300px; */  
+  border-radius: 12px;
   background-size: cover;
   background-repeat: no-repeat;
 
+  transition: 1s;
 }  
 section#PortFolio .wrap ul li p{
   
@@ -83,16 +105,13 @@ section#PortFolio .wrap ul li:nth-child(3){
   
 }
 section#PortFolio .wrap ul li:nth-child(4){
-  
-  display: none;
+
 }
 section#PortFolio .wrap ul li:nth-child(5){
-  
-  display: none;
+
 }
 section#PortFolio .wrap ul li:nth-child(6){
-  
-  display: none;
+
 }
 
 section#PortFolio .wrap ul li a{
@@ -102,7 +121,6 @@ section#PortFolio .wrap ul li a{
   background-repeat: no-repeat;
   width: 400px;
   height: 300px;
-  border-radius: 20px;
 }
 section#PortFolio .wrap ul li:nth-child(1) a{
 }
@@ -120,6 +138,7 @@ section#PortFolio .wrap ul li a img{
   width: 100%;
   height: 300px;
   border-radius: 20px;
+  transition: 1s;
 }
 section#PortFolio .wrap ul li:nth-child(1) a img:hover{
   
