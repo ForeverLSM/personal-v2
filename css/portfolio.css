@@ -29,12 +29,12 @@ section#PortFolio .wrap .pfSlide{
   overflow-x: clip;
   margin-bottom: 0;
   margin-top: 50px;
-  height: 90%;
+  /*! height: 90%; */
 }
 section#PortFolio .wrap ul .slick-dots{
   width: 100%;
   height: initial;
-  bottom: 100px;
+  bottom: 0px;
 }
 section#PortFolio .wrap ul li .slick-dots li button{
   
