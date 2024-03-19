@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
-   <!-- slick -->
+   <!-- slick  -->
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -14,6 +14,31 @@
 
          });
    </script>
+
+<!-- 일러스트에서의 도형을 마스크로  
+사용하기
+1 일러에서 도형생성.svg로 저장
+2  vs에서 오픈
+3  svg코드만 붙여넣기.마스크할 태그 아래에...
+4  svg코드 수정
+  - <path>태그를 
+<defs>
+   <clipPath id="clipPath"> 로 둘러싼다.
+5 css설정
+ div{ /* 마스크할 요소의 부모 */
+   -webkit-clip-path: url(#clipPath);
+   clip-path: url(#clipPath); /* For modern */
+   position: relative;
+  }
+svg{
+   width:1600px;
+   height:1400px;
+   position: absolute;
+   z-index: -1;
+  }
+#clipPath{
+   transform: scale(3) translateX(100px);
+  }-->
 
    <style>
 
@@ -111,5 +136,57 @@
         </uk>
     </div>
 </body>
+</html> 
+
+
+<!-- 마스크 효과(마우스 올리면 이미지가 커지는 효과) -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Masking with clip-path</title>
+<style>
+   html,body{
+      height: 100%;
+   }
+   div:hover{
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Webkit browsers */
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Standard */
+   }
+  div{
+   width: 1600px;
+   height: 100%;
+   width: 1600px;
+  height: 100%;
+  -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  /*clip-path: polygon(45% 45%, 55% 45%, 55% 55%, 45% 55%); */
+  transition: 1s;
+  /* clip-path: circle(20% at 50% 50%);동그라미  */
+  }
+  img{
+   width: 100%;
+   height: 100%;
+  }
+  /* .masked-image {
+    width: 500px;
+    height: 700px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px); 
+    clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
+  } */
+</style>
+</head>
+<body>
+    <video id="bg-video" autoplay muted loop>
+        <source src="../../pf/pf7-picogram/img/title/bg-01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  <!-- <div> 
+      <h1>웹 에이전시</h1>
+       <img src="https://images.unsplash.com/photo-1682687982502-1529b3b33f85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Example Image" class="masked-image">
+   </div>-->
+</body>
 </html>
+
 
