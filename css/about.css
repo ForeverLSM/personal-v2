@@ -31,7 +31,7 @@ section#About .wrap .me img{
   height: 600px;
   /*! border-radius: 50%; */
   background-color: #000;
-  background-image: url(../img/about/ai_me.png);
+  /*! background-image: url(../img/about/ai_me.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
